@@ -1,0 +1,62 @@
+/* Basic reset and font settings */ 
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container to hold the background image and content */
+.container {
+    background-image: url('beach.jpg'); /* Ensure this image is in your project directory */
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Styling for the main heading */
+h1 {
+    color: #fff;
+    font-size: 5em;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Styling for the word "Angel" */
+h1 span {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.2em;
+    color: #ffd700;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+.container {
+    background-image: url('https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?cs=srgb&dl=pexels-asad-photo-maldives-994605.jpg&fm=jpg');
+    /* Rest of your styles */
+}
+h1 {
+    /* Existing styles */
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
